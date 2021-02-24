@@ -282,7 +282,7 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/Croquis\ kiwi.jpg);
+    background: url(../img/Carnet\ couverture\ closeup.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -580,8 +580,8 @@ a.active {
 }
 
 .portfolio_item img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);*/
 }
 
 .portfolio-padding {
@@ -606,7 +606,7 @@ a.active {
     float: right;
     margin: 20px;
     font-size: 22px;
-    opacity: 0;
+    /*opacity: 0;*/
     cursor: pointer;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -617,9 +617,9 @@ a.active {
     right: 14px;
 }
 
-.animatedModal-on .close-popup-modal {
+/*.animatedModal-on .close-popup-modal {
     opacity: 1;
-}
+}*/
 
 .modal-content h2 {
     font-family: 'Playfair Display', serif;
