@@ -228,9 +228,12 @@ header {
     height: 65px;
 }
 
-.wholetitle{
+.wholetitle {
     background-color: white;
     padding: 3em;
+    border-radius: 1em;
+    background-color: rgba(244, 230, 183, 0.95);
+    width: 100%;
 }
 nav ul {
     display: inline-block;
