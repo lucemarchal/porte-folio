@@ -114,6 +114,11 @@ $(document).ready(function () {
             modalTarget: 'pochetotebagModal'
         }
     );
+    $("#masques").animatedModal(
+        {
+            modalTarget: 'masquesModal'
+        }
+    );
 
     // Contact Form 	
 
