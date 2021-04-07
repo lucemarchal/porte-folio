@@ -1,6 +1,6 @@
 // JavaScript Document
 
-$(window).load(function () {
+$(document).ready(function () {
     "use strict";
     // makes sure the whole site is loaded
     $('#status').fadeOut(); // will first fade out the loading animation
