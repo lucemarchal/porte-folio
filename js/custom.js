@@ -104,7 +104,7 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#carnetbord").animatedModal(
+    /*$("#carnetbord").animatedModal(
         {
             modalTarget: 'carnetbordModal'
         }
@@ -118,7 +118,16 @@ $(document).ready(function () {
         {
             modalTarget: 'masquesModal'
         }
-    );
+    );*/
+
+    $(".portfolio_item").each(function (index) {
+        $(this).animatedModal(
+            {
+                modalTarget: $(this).attr('id') + 'Modal'
+            });
+
+    });
+
 
     // Contact Form 	
 
