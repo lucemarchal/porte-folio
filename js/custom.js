@@ -119,13 +119,26 @@ $(document).ready(function () {
             modalTarget: 'masquesModal'
         }
     );*/
-
+    var currentModal;
     $(".portfolio_item").each(function (index) {
         $(this).animatedModal(
             {
-                modalTarget: $(this).attr('id') + 'Modal'
+                modalTarget: $(this).attr('id') + 'Modal',
+                beforeOpen: function () {
+                    currentModal = this;
+                    window.location.hash = "modal";
+                }
             });
 
+    });
+
+    $(window).on('hashchange', function (event) {
+        if (window.location.hash != "#modal") {
+            $(".close-" + currentModal.modalTarget).each(function (index) {
+                $(this).trigger("click");
+                window.location.hash = "";
+            });
+        }
     });
 
 
